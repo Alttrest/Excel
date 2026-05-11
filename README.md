@@ -31,7 +31,7 @@ Kullanıcı Adı: admin
 Google Girişi: Butona bastığınızda tarayıcı açılır, doğrulama sonrası otomatik olarak içeri alınırsınız.
 
 👨‍💻 Geliştirici ve İletişim
-Bu proje alttre.sh tarafından geliştirilmiştir.
+Bu proje @alttre.sh tarafından geliştirilmiştir.
 
 📜 Lisans
 Bu proje MIT Lisansı kapsamında korunmaktadır. Özgürce geliştirebilir ve paylaşabilirsiniz.
