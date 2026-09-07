@@ -1,3 +1,15 @@
+<div align="center">
+  <h1>✨ Excel ✨</h1>
+  <p><i>Schol Number List</i></p>
+
+  <!-- Badges -->
+  <img src="https://img.shields.io/github/languages/top/Alttrest/Excel?style=for-the-badge&color=blue" alt="Top Language" />
+  <img src="https://img.shields.io/github/repo-size/Alttrest/Excel?style=for-the-badge" alt="Repo Size" />
+  <img src="https://img.shields.io/github/last-commit/Alttrest/Excel?style=for-the-badge" alt="Last Commit" />
+</div>
+
+<br />
+
 🎓 Öğrenci Otomasyonu PRO | v7.1
 Modern arayüzlü, yerel veritabanı destekli ve kurumsal raporlama yeteneklerine sahip profesyonel bir yönetim yazılımıdır. Geliştirici hesabı gerektirmeyen Google Auth simülasyonu ile eşsiz bir kullanıcı deneyimi sunar.
 
