@@ -1,27 +1,154 @@
-<svg width="800" height="300" viewBox="0 0 800 300" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <rect width="800" height="300" rx="15" fill="#0D1117" stroke="#30363D" stroke-width="2"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050811"/>
+      <stop offset="50%" stop-color="#0b1329"/>
+      <stop offset="100%" stop-color="#030712"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1e293b" stroke-width="0.75" stroke-opacity="0.3"/>
+    </pattern>
+  </defs>
+
+  <style>
+    @keyframes pulse {
+      0%, 100% { opacity: 0.8; transform: scale(1); }
+      50% { opacity: 1; transform: scale(1.05); }
+    }
+    @keyframes scan {
+      0% { transform: translateY(0); opacity: 0.8; }
+      100% { transform: translateY(180px); opacity: 0; }
+    }
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    .grid-bg { fill: url(#grid); }
+    .pulse-elem { animation: pulse 2.5s ease-in-out infinite; }
+  </style>
+
+  <rect width="1200" height="560" rx="16" fill="url(#bg)" stroke="#1e293b" stroke-width="1.5"/>
+  <rect width="1200" height="560" rx="16" class="grid-bg" />
+
+  <!-- Top Badge -->
+  <g transform="translate(60, 45)">
+    <rect width="200" height="26" rx="13" fill="#0f172a" stroke="#10b981" stroke-width="1"/>
+    <circle cx="15" cy="13" r="4" fill="#10b981" />
+    <text x="28" y="17" fill="#10b981" font-family="monospace" font-size="11" font-weight="700">STUDENT AUTOMATION</text>
+  </g>
+
+  <!-- Left Column: Project Identity & Specs -->
+  <g transform="translate(60, 115)">
+    <text x="0" y="38" fill="#f8fafc" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="40" font-weight="800" letter-spacing="-1">OtomasyonApp</text>
+    <text x="0" y="74" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="15">Desktop Student Management &amp; Executive Excel Automation</text>
+
+    <!-- Stack Chips -->
+    <g transform="translate(0, 100)">
+      
+        <rect x="0" y="0" width="78" height="30" rx="6" fill="#0f172a" stroke="#1e293b"/>
+        <text x="39" y="19" text-anchor="middle" fill="#38bdf8" font-family="monospace" font-size="12" font-weight="600">Python</text>
+        
+        <rect x="90" y="0" width="141" height="30" rx="6" fill="#0f172a" stroke="#1e293b"/>
+        <text x="160" y="19" text-anchor="middle" fill="#a855f7" font-family="monospace" font-size="12" font-weight="600">CustomTkinter</text>
+        
+        <rect x="243" y="0" width="87" height="30" rx="6" fill="#0f172a" stroke="#1e293b"/>
+        <text x="286" y="19" text-anchor="middle" fill="#10b981" font-family="monospace" font-size="12" font-weight="600">SQLite3</text>
+        
+        <rect x="342" y="0" width="114" height="30" rx="6" fill="#0f172a" stroke="#1e293b"/>
+        <text x="399" y="19" text-anchor="middle" fill="#f59e0b" font-family="monospace" font-size="12" font-weight="600">XlsxWriter</text>
+        
+    </g>
+
+    <!-- Metrics Cards -->
+    <g transform="translate(0, 160)">
+      
+        <g transform="translate(0, 0)">
+          <rect width="145" height="60" rx="8" fill="#0f172a" stroke="#1e293b"/>
+          <text x="14" y="24" fill="#64748b" font-family="monospace" font-size="10">SECURITY</text>
+          <text x="14" y="48" fill="#10b981" font-family="-apple-system, sans-serif" font-size="14" font-weight="700">Admin RBAC</text>
+        </g>
+        
+        <g transform="translate(155, 0)">
+          <rect width="145" height="60" rx="8" fill="#0f172a" stroke="#1e293b"/>
+          <text x="14" y="24" fill="#64748b" font-family="monospace" font-size="10">STORAGE</text>
+          <text x="14" y="48" fill="#34d399" font-family="-apple-system, sans-serif" font-size="14" font-weight="700">SQLite3 DB</text>
+        </g>
+        
+        <g transform="translate(310, 0)">
+          <rect width="145" height="60" rx="8" fill="#0f172a" stroke="#1e293b"/>
+          <text x="14" y="24" fill="#64748b" font-family="monospace" font-size="10">REPORTS</text>
+          <text x="14" y="48" fill="#38bdf8" font-family="-apple-system, sans-serif" font-size="14" font-weight="700">Styled XLSX</text>
+        </g>
+        
+    </g>
+
+    <!-- Detailed Highlights -->
+    <g transform="translate(0, 255)">
+      <text x="0" y="0" fill="#10b981" font-family="monospace" font-size="11" font-weight="700">CORE SYSTEM ARCHITECTURE:</text>
+      
+        <text x="0" y="22" fill="#cbd5e1" font-family="-apple-system, sans-serif" font-size="12">● Modern dark desktop interface powered by CustomTkinter</text>
+        
+        <text x="0" y="42" fill="#cbd5e1" font-family="-apple-system, sans-serif" font-size="12">● Role-based privilege escalation and authorization controls</text>
+        
+        <text x="0" y="62" fill="#cbd5e1" font-family="-apple-system, sans-serif" font-size="12">● Executive spreadsheet generation with custom cell fonts a...</text>
+        
+    </g>
+  </g>
+
+  <!-- Right Column: Bespoke Visual Representation -->
+  <g transform="translate(680, 50)">
     
-    <!-- Header -->
-    <rect x="0" y="0" width="800" height="60" rx="15" fill="#161B22"/>
-    <text x="50" y="40" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#58A6FF">Excel</text>
-    <line x1="0" y1="60" x2="800" y2="60" stroke="#30363D" stroke-width="2"/>
-    
-    <!-- Description -->
-    <text x="50" y="120" font-family="Arial, sans-serif" font-size="16" fill="#8B949E">Schol Number List</text>\n
-    
-    <!-- Footer -->
-    <line x1="50" y1="230" x2="750" y2="230" stroke="#30363D" stroke-width="1"/>
-    
-    <!-- Language -->
-    <circle cx="60" cy="260" r="8" fill="#F1E05A"/>
-    <text x="80" y="265" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#C9D1D9">Python</text>
-    
-    <!-- Stars -->
-    <text x="200" y="265" font-family="Arial, sans-serif" font-size="16" fill="#8B949E">⭐ Stars: 2</text>
-    
-    <!-- Forks -->
-    <text x="320" y="265" font-family="Arial, sans-serif" font-size="16" fill="#8B949E">🍴 Forks: 0</text>
-    
-    <!-- Developer -->
-    <text x="650" y="265" font-family="Arial, sans-serif" font-size="14" fill="#8B949E">by @Alttrest</text>
+        <g transform="translate(20, 20)">
+          <rect width="420" height="310" rx="8" fill="#0b1712" stroke="#10b981" stroke-width="1.5"/>
+          <path d="M 0 8 C 0 3.5 3.5 0 8 0 L 412 0 C 416.5 0 420 3.5 420 8 L 420 30 L 0 30 Z" fill="#052e1f"/>
+          <circle cx="18" cy="15" r="3.5" fill="#ef4444"/>
+          <circle cx="30" cy="15" r="3.5" fill="#f59e0b"/>
+          <circle cx="42" cy="15" r="3.5" fill="#10b981"/>
+          <text x="60" y="19" fill="#a7f3d0" font-family="monospace" font-size="10">OtomasyonApp [SQLite3 / CustomTkinter]</text>
+
+          <g transform="translate(15, 45)">
+            <rect width="390" height="26" rx="4" fill="#10b981"/>
+            <text x="10" y="18" fill="#022c22" font-family="monospace" font-size="10" font-weight="800">#</text>
+            <text x="40" y="18" fill="#022c22" font-family="monospace" font-size="10" font-weight="800">STUDENT NAME</text>
+            <text x="170" y="18" fill="#022c22" font-family="monospace" font-size="10" font-weight="800">SCHOOL NO</text>
+            <text x="270" y="18" fill="#022c22" font-family="monospace" font-size="10" font-weight="800">ROLE / ACCESS</text>
+
+            <g transform="translate(0, 32)">
+              <rect width="390" height="24" rx="2" fill="#0d261b" stroke="#134e38" stroke-width="0.5"/>
+              <text x="10" y="16" fill="#34d399" font-family="monospace" font-size="10">01</text>
+              <text x="40" y="16" fill="#f1f5f9" font-family="sans-serif" font-size="10">Ali Turan</text>
+              <text x="170" y="16" fill="#94a3b8" font-family="monospace" font-size="10">20240911</text>
+              <text x="270" y="16" fill="#10b981" font-family="monospace" font-size="10">Admin (Full)</text>
+            </g>
+            <g transform="translate(0, 60)">
+              <rect width="390" height="24" rx="2" fill="#071b13" stroke="#134e38" stroke-width="0.5"/>
+              <text x="10" y="16" fill="#34d399" font-family="monospace" font-size="10">02</text>
+              <text x="40" y="16" fill="#f1f5f9" font-family="sans-serif" font-size="10">Nezbat K.</text>
+              <text x="170" y="16" fill="#94a3b8" font-family="monospace" font-size="10">20240918</text>
+              <text x="270" y="16" fill="#6ee7b7" font-family="monospace" font-size="10">Engineering</text>
+            </g>
+            <g transform="translate(0, 88)">
+              <rect width="390" height="24" rx="2" fill="#0d261b" stroke="#134e38" stroke-width="0.5"/>
+              <text x="10" y="16" fill="#34d399" font-family="monospace" font-size="10">03</text>
+              <text x="40" y="16" fill="#f1f5f9" font-family="sans-serif" font-size="10">Bulut D.</text>
+              <text x="170" y="16" fill="#94a3b8" font-family="monospace" font-size="10">20240924</text>
+              <text x="270" y="16" fill="#6ee7b7" font-family="monospace" font-size="10">AI Research</text>
+            </g>
+          </g>
+
+          <g transform="translate(15, 255)">
+            <rect width="390" height="36" rx="6" fill="#064e3b" stroke="#10b981" stroke-width="1.5" class="pulse-elem"/>
+            <text x="195" y="23" text-anchor="middle" fill="#a7f3d0" font-family="monospace" font-size="11" font-weight="700">[↓] EXPORT STYLED EXCEL (XlsxWriter)</text>
+          </g>
+        </g>
+        
+  </g>
+
+  <!-- Bottom Bar -->
+  <g transform="translate(60, 515)">
+    <line x1="0" y1="0" x2="1080" y2="0" stroke="#1e293b" stroke-width="1"/>
+    <text x="0" y="22" fill="#64748b" font-family="monospace" font-size="11">REPOSITORY: Alttrest/OtomasyonApp</text>
+    <text x="400" y="22" fill="#64748b" font-family="monospace" font-size="11">MAINTAINER: Ali Turan (@Alttrest)</text>
+    <text x="960" y="22" fill="#10b981" font-family="monospace" font-size="11">● PRODUCTION VERIFIED</text>
+  </g>
 </svg>
