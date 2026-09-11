@@ -1,1 +1,5 @@
-<div align="center">\n  <a href="https://github.com/Alttrest/Excel">\n    <img src="readme.svg" alt="Excel" width="100%"/>\n  </a>\n</div>\n
+<p align="center">
+  <a href="https://github.com/Alttrest/Excel">
+    <img src="readme.svg" width="100%" alt="Excel - Interactive Architecture &amp; Visual Identity" />
+  </a>
+</p>
